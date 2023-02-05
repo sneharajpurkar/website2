@@ -1,15 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            width: 100%;
+            height: 55px;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: space-around;
+        }
+        #navbar-left{
+            width: 350px;
+            height: 50px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        #navbar-left>div:nth-child(1)>i{
+            height: 40px;
+            width: 40px;
+            font-size: 40px;
+            color: #0a66c2;
+            margin-top: 5px;
+            /* border: 1px solid blue; */
+        }
+        #navbar-left>div:nth-child(2){
+            height: 35px;
+            width: 260px;
+            background-color: #eef3f8;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #navbar-left>div:nth-child(2)>i{
+            margin-top: 8px;
+            margin-left: 20px;
+        }
+        #navbar-left>div:nth-child(2)>input{
+            border: none;
+            outline: none;
+            background-color: #eef3f8;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        #navbar-right{
+            display: flex;
+            height: 50px;
+            width: 520px;
+        }
+        #navbar-right>div{
+            height: 50px;
+            width: 120px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        #navbar-right>div>i{
+            height: 25px;
+            width: 25px;
+            font-size: 25px;
+            color: rgb(96, 96, 96);
+            margin-left: 29px;
+        }
+        #navbar-right>div>p{
+            text-align: center;
+            font-size: 15px;
+            color: rgb(96, 96, 96);
+        }
+        @media screen and (max-width:500px){
+            #navbar{
+                height: 50px;
+                width: 500px;
+                background-color:#eef3f8;
+                display: flex;
+                flex-wrap:;
+                
+            }
+            #navbar-left>div:nth-child(1)>i{
+                height: 40px;
+                width: 40px;
+                color: #0a66c2;
+            }
+            #navbar-left>div:nth-child(2)>i{
+                height: 40px;
+                width: 40px;
+            }
+            #navbar-left>div:nth-child(2)>input{
+                display: none;
+            }
+            #navbar-right>div>i{
+                height: 20px;
+                width: 20px;
+                font-size: 20px;
+            }
+            #navbar-right>div>p{
+                display: none;
+            }
+        }
+
+    </style>
 </head>
+
 <body>
-    <div>
-        <div></div>
-        <div></div>
+    <div id="navbar">
+        <div id="navbar-left">
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+        </div>
+        <div id="navbar-right">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>Home</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i>
+                <p>My Network</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Jobs</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-comment-dots"></i>
+                <p>Messaging</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bell"></i>
+                <p>Notifications</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Me</p>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 </body>
+
 </html>
